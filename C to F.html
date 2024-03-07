@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celeius to Fahrenheit</title>
+    <style>
+        body {
+            background-color: #262626;
+        }
+
+        .c {
+            text-align: center;
+            color: #ff0068;
+            background: #acff7f;
+            font-size: 50px;
+            font-family: 'circular';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <script>
+        // C to F
+        var givenTemperatureByUser = prompt('Enter temperatue in Celius');
+        var ToFarheheit =  (9 / 5 * givenTemperatureByUser) + 32;
+        document.write(`<h1 class = c>${givenTemperatureByUser} C is equal to ${ToFarheheit} F .`)
+        if (givenTemperatureByUser < 0) {
+            document.write("Temperature is below absolute zero!")
+        }
+    </script>
+</body>
+
+</html>
